@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<title>What I Learned</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Comic+Neue:wght@700&family=DM+Serif+Text&family=Rubik&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Comic+Neue:wght@700&family=DM+Serif+Text&family=Kanit:wght@300&family=Rubik&display=swap" rel="stylesheet">
+	<link href="./styles/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+	<div class="current-page-tab"></div>
+
+	<!-- iFrame navigation bar for computer screens. Styles in styles.css -->
+	
+	<iframe name="wide-nav" src="navbar-wide-screens.html" width="20%" height="100%">
+		
+		<div class="iframes-disabled">
+		
+			<h1>Jonah Allkind</h1>
+		
+			<a href="index.html">What I Learned</a>
+			<a href="./pages/what-i-want-to-learn.html">What I Want to Learn</a>
+			<a href="./pages/projects.html">My Projects</a>
+			
+			<p>**Your browser does not support iFrames. Please enable them for a better experience.</p>
+			
+		</div>
+		
+	</iframe>
+	
+	
+	
+	
+	
+	<!-- If we're on mobile -->
+	
+	<iframe name="portrait-nav" src="navbar-portrait-screens.html" width="100%" height="147px" style="border: none;"></iframe>
+	
+	
+	
+	
+	
+	
+	
+	<header>
+		<div id="header"></div>
+	</header>
+
+	<main>
+		
+		<div class="main-content">
+		
+		<div class="header-tab">
+			<h1>What I Learned</h1>
+			<h1>2022-2023</h1>
+		</div>
+
+		<p>In spring 2023, I taught myself how to code, specifically in web development. I knew very basic coding from my homeschool curriculum, EP, but this year, I decided to learn more.</p>
+		<p>To show what I learned for my 2023 school year evaluation, I thought what better idea than to create a website featuring all of my skills! I plan to make one of these every year, each new site better than the previous one.</p>
+		<p>This year was my learning curve year, where I was exposed to many new concepts in web development and gave me a new perspective and respect for people who create websites - it's hard!</p>
+		<p>For me, the hardest part about coding was keeping myself <i>organized</i>. I would get confused with what goes to what and what everything does. That's why most of the projects I started never got finished.</p>
+		<p>Anyway, this spring, I learned the following languages:</p>
+
+	
+	<div class="flex-container">
+
+		<div class="box html-box">
+			<p><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></p>
+			<p>The HyperText Markup Language</p>
+			<p>Used to construct the skeletal structure of a webpage. Files can end in <b>.html</b> or <b>.htm</b></p>
+		</div>
+	
+			<div class="box css-box">
+				<p><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a></p>
+				<p>Cascading Style Sheets</p>
+				<p>Used to enhance the aesthetic appearance of a webpage. Files end in <b>.css</b></p>
+			</div>
+	
+				<div class="box js-box">
+					<p><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></p>
+					<p>Makes websites interactive with a number of statements using html elements. Files end in <b>.js</b> </p>
+				</div>
+		
+	</div>
+	
+
+		<p>I also learned a little bit of <b>Python</b>, a popular backend scripting language. I can't make anything useful yet, but I did make a non-playable console game.
+		I picked up the syntax pretty easily (i.e. the way you write the language) due to my prior knowledge of JavaScript.</p>
+		
+		<p>I feel pretty content with my progress in HTML and CSS, although I don't like how nuanced they are (primarily CSS). I faced an especially challenging issue I had to fix while constructing 
+		this website regarding CSS specificity, but I debugged it after some research. Another challenge I had while making this website specifically was making a reusable navigation bar. The browser 
+		doesn't just <em>know</em> that the navigation bar must be included on every page. After days of searching for a solution, I settled for <code>&lt;iframe&gt;</code> tags.</p>
+		
+		<p>I learned this wasn't the <em>best</em> way to do this (according to the internet, the most widely accepted method is using another language such as PHP. But I literally was scrambling 
+		for a solution the day before my evaluation, so it's what I settled for.</p>
+		
+		<p>I haven't gone very far in JavaScript, but I know about different variables and functions. I also learned how to change the attributes ("styles") that CSS gives an element using JS.</p>
+		
+		<p>P.S.: If you ever try to learn CSS, learn <em>why</em> it's called <b>Cascading</b> Style Sheets. Master specificity and inheritance, and also learn about the box model. Taking the time to learn these will make bugs in your website less mysterious.</p>
+		<p>P.P.S.: Also, refrain from using <code>!<span style="display: inline; background-color: #00b300">important</span></code> in your CSS code.
+		
+		</div> <!-- For main-content -->
+		
+	</main>
+	
+	
+	
+</body>
+
+</html>

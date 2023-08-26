@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Comic+Neue:wght@700&family=DM+Serif+Text&family=Rubik&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Comic+Neue:wght@700&family=DM+Serif+Text&family=Kanit:wght@300&family=Rubik&display=swap" rel="stylesheet">
+	<link href="../styles/styles.css" rel="stylesheet" type="text/css">
+	<title>What I Want to Learn</title>
+
+</head>
+
+<body>
+
+	<iframe name="wide-nav" src="../navbar-wide-screens.html" width="20%" height="100%" style="position: fixed; top: 0; left: 0; border: none;">
+	
+		<p>Your browser does not support iFrames. Please enable them for a better experience.</p>
+		
+		<a href="index.html">What I Learned</a>
+		<a href="./pages/what-i-want-to-learn.html">What I Want to Learn</a>
+		<a href="./pages/projects.html">My Projects</a>
+		
+	</iframe>
+	
+	<iframe name="portrait-nav" src="../navbar-portrait-screens.html" width="100%" height="117px" style="border: none;"></iframe>
+
+	<main>
+	
+		<div class="main-content">
+
+			<div class="header-tab">
+				<h1 style="display: inline-block;">What I Want to Learn</h1>
+				<h1 style="float: right;">2022-2023</h1>
+			</div>
+			
+			<p>I have lots of things I want to learn. First, I'd need to fully master CSS. I am yet to master flexbox, grid, @media queries, and other CSS features.
+			While doing this, I'll learn more JavaScript.</p>
+			<p>The ideal would be to learn every single language, but that would take way too much time. I think I would get a good foundation in JavaScript, and then learn about servers.
+			I would learn how to submit data from HTML forms (if you don't know what those are, I made a simple one below) using server-side languages such as PHP, Python, and the Structured Query Language, or SQL (also pronounced "sequel").
+			I'll learn how to make different queries to the databases and have code written for every query. This would be my deep-dive into backend programming. I would move on from there.</p>
+			
+			<h1 style="text-align: center;">An HTML Form</h1>
+			
+			<form class="dummy-form" action="#">
+			
+				<fieldset>
+					<label>Username: <input type="text" placeholder="Username" required></label><br>
+					<label>Email: <input type="email" placeholder="john.doe@example.com" required></label><br>
+					<label>Password: <input type="password" name="password" minlength="5" placeholder="At least 5 characters" required></label>
+				</fieldset>
+				<fieldset>
+					<label><input type="checkbox" required>I accept the <a onclick="dummyTermsAndConditionsALERT()" class="terms-and-conditions" href="#">terms and conditions</a></label>
+				</fieldset>
+				
+				<button type="submit">Submit</button>
+				
+			</form>
+		
+			<p><b>Update from July 7, 2023:</b> I have a good understanding of CSS media queries now, and I even implemented them in this site. There screen will now change
+			when the screen is 610px wide or less.</p>
+		
+		</div>
+		
+	</main>
+
+	<script>
+					
+		function dummyTermsAndConditionsALERT() {
+			alert("Normally, this would take you to the website's terms and conditions page.")
+		}
+
+	</script>
+
+</body>
+
+</html>

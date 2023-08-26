@@ -1,0 +1,313 @@
+/* TODO: work on dummy form */
+
+/* 
+	TABLE OF CONTENTS
+	1. Global selectors
+	2. Typography
+	3. Layout
+	4. Components
+	5. Media Queries
+*/
+
+
+
+
+/* ====================
+   1. GLOBAL SELECTORS
+   ==================== */
+
+body {
+	margin: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: arial, sans-serif;
+	color: #000;
+}
+
+p {
+	line-height: 1.4;
+}
+
+/* ====================
+   2. TYPOGRAPHY
+   ==================== */
+
+.header-tab {
+	height: 50px;
+	margin: 0 0 30px 0;
+	padding: 5px 10px;
+	background-color: #3385ff;
+	border-radius: 0 0 10px 10px;
+}
+
+.header-tab h1 {
+	margin: 10px;
+	font-size: 25px;
+}
+
+.header-tab h1:first-of-type {
+	float: left;
+}
+
+.header-tab h1:last-of-type {
+	float: right;
+}
+
+/* 0,0,1,1 -- slightly more specific than ".side-nav a", line 58, and is therefore used instead --- 5.31.2023 */
+a.current-page:hover {
+	background-color: white;
+	border-radius: 0 10px 10px 0;
+}
+
+/* ====================
+   3. LAYOUT
+   ==================== */
+
+.main-content {
+	margin: 0 20px 0 22%;
+	color: #000;
+}
+
+.main-content ul, ol {
+	font-family: "Kanit", sans-serif, serif;
+}
+
+
+
+
+/* Wide screens iframe */
+
+iframe[name="wide-nav"] {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	border: none;
+	z-index: 1;
+}
+
+div.current-page-tab {
+	position: fixed;
+	top: 100px;
+	left: 0;
+	width: 5px;
+	height: 20px;
+	background-color: #3385ff;
+	z-index: 2;
+}
+
+
+/* Portrait screens iframe */
+
+iframe[name="portrait-nav"] {
+	display: none;
+}
+
+
+
+/* ====================
+   4. COMPONENTS
+   ==================== */
+
+/* HTML, CSS, and JS divs */
+
+.flex-container {
+	display: flex;
+	text-align: center;
+}
+
+.flex-container a {
+	color: #000;
+	font-size: 30px;
+}
+
+.flex-container a:link {
+	font-weight: bold;
+}
+
+.flex-container a:hover {
+	color: #fff;
+}
+
+.flex-container > div {
+	flex: 1;
+}
+
+.box {
+	margin: 20px 5px;
+	padding: 7px 10px;
+	border: 3px solid #000;
+	border-radius: 10px;
+}
+
+.html-box {
+	background-color: #ff0000;
+}
+
+.css-box {
+	background-color: #0080ff;
+}
+
+.js-box {
+	background-color: #ffcc00;
+}
+
+
+/* 'hpg' stands for 'How Plants Grow' */
+#hpg-home-page {
+	margin: 10px;
+	border-radius: 5px;
+	float: right;
+	border: 3px solid #000;
+}
+
+#hpg-bean-plant {
+	margin: 10px;
+	border-radius: 5px;
+	float: right;
+	border: 3px solid #000;
+}
+
+/* ++++++++++++++++++
+	Start dummy form
+   ++++++++++++++++ */
+
+.dummy-form {
+	background-color: #fff;
+	margin: 20px auto;
+	color: #000;
+	padding: 10px;
+	width: 300px;
+	font-family: "Kanit", sans-serif, serif;
+	border: 3px solid rgb(0,177,0);
+	border-radius: 10px;
+}
+
+.dummy-form fieldset {
+	border: none;
+}
+
+.dummy-form label {
+	display: block;
+}
+
+.dummy-form input[type="text"],
+input[type="email"],
+input[type="password"] {
+	margin: 5px 0;
+	box-sizing: border-box; /* To not let padding affect width of element */ 
+	width: 100%;
+	padding: 10px 10px;
+	background-color: rgb(153, 233, 153);
+	border: none;
+	border-radius: 5px;
+}
+
+.dummy-form input::placeholder {
+	color: rgb(100, 100, 100);
+}
+
+
+
+/* START Terms and conditions  */
+.dummy-form .terms-and-conditions {
+	color: #00e600;
+	text-align: center;
+}
+
+.dummy-form .terms-and-conditions:hover {
+	color: #33ff33;
+}
+/* END Terms and conditions */
+
+/* START Submit Button */
+
+/* Select button hover state within dummy-form with type of "submit" */
+.dummy-form button[type="submit"] {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 15px;
+	font-size: 20px;
+	border: none;
+	border-radius: 30px;
+	background-color: #000;
+	color: #fff;
+}
+
+.dummy-form button[type="submit"]:hover {
+	background-color: #595959;
+}
+/* END Submit Button */
+
+
+/* END dummy form */
+
+
+
+
+
+
+/* Used if the nav iFrame can't load */
+
+div.iframes-disabled {
+	display: inline-block;
+	position: fixed;
+	width: 20%;
+	height: 100vh;
+	text-align: center;
+	background: #ffe0b3;
+}
+
+div.iframes-disabled p {
+	color: red;
+	line-height: 1.0;
+}
+
+div.iframes-disabled a {
+	display: block;
+}
+
+/* ====================
+   5. MEDIA QUERIES
+   ==================== */
+
+/* Apply for portrait screens */
+
+@media screen and (max-width: 610px) {
+	iframe[name="wide-nav"] {
+		display: none;
+	}
+	
+	iframe[name="portrait-nav"] {
+		display: block;
+	}
+	
+	.main-content {
+		margin: 0 10px;
+	}
+	
+	.header-tab h1 {
+		font-size: 20px;
+	}
+	
+	/* Make boxes stack on each other */
+	
+	.flex-container {
+		flex-direction: column;
+	}
+	
+	.box {
+		margin: 0;
+	}
+	
+	.flex-container {
+		gap: 15px;
+	}
+}
+
+/* To fix the problem with header "2023-2023" text moving down a line */
+
